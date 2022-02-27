@@ -2,16 +2,16 @@
 
 # 申明
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本项目只是作者记录和分享Java网络编程学习心得，请勿用于非法用途，否则后果自负!
+本项目只是作者记录和分享Java网络编程学习心得，请勿用于非法用途，否则后果自负!
 
 # 介绍
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;纯Java实现的网络代理小工具，是学习socket通信，多线程，绝佳项目
+纯Java实现的网络代理小工具，是学习socket通信，多线程，绝佳项目
 
 可导入idea直接运行。
 
 
-#直接运行已经打包好的jar
+# 直接运行已经打包好的jar
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;要想看到效果，需要把你操作系统代理设置到 你LocalConfig.json文件设置的host和port上
 
@@ -45,7 +45,7 @@ Mac shell: open_proxy.sh,close_proxy.sh
 
         com.proxy.local.starter.LocalStarter
 
-&nbsp;&nbsp;&nbsp;&nbsp;以这个类为主类打包可执行jar,LocalConfig.json文件放在和这个jar同一个目录下
+以这个类为主类打包可执行jar,LocalConfig.json文件放在和这个jar同一个目录下
 运行时直接 java -jar MyNatClient.jar 即可.
 
 ###客户端配置文件详解
