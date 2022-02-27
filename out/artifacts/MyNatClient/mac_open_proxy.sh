@@ -3,12 +3,10 @@ trim(){
 	trimmed=$1
 	trimmed=${trimmed%% }
 	trimmed=${trimmed## }
-
 	echo $trimmed
 }
 
-
-row=$(lsof -i:1666 | wc -l)
+row=$(lsof -i:8888 | wc -l)
 irow=$(trim $row)
 # echo ${irow}
 
@@ -20,8 +18,8 @@ else
 	echo "jar has started"
 fi
 
-networksetup -setwebproxy "Wi-Fi" 127.0.0.1 1666
-networksetup -setsecurewebproxy "Wi-Fi" 127.0.0.1 1666
+networksetup -setwebproxy "Wi-Fi" 127.0.0.1 8888
+networksetup -setsecurewebproxy "Wi-Fi" 127.0.0.1 8888
 
 networksetup -setsecurewebproxystate "Wi-Fi" on
 networksetup -setwebproxystate "Wi-Fi" on
