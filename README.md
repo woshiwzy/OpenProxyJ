@@ -13,7 +13,7 @@
 
 # 直接运行已经打包好的jar
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;要想看到效果，需要把你操作系统代理设置到 你LocalConfig.json文件设置的host和port上
+要想看到效果，需要把你操作系统代理设置到 你LocalConfig.json文件设置的host和port上
 
 设置代理方法，以win10 为例，
 
