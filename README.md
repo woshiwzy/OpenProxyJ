@@ -1,20 +1,22 @@
 
-
 # 申明
 
 本项目只是作者记录和分享Java网络编程学习心得，请勿用于非法用途，否则后果自负!
 
 # 介绍
 
-纯Java实现的网络代理小工具，可以用来学习Socket通信，多线程编程，当然也可以用于简单的生成环境。
+纯Java实现的网络代理小工具，可以实现http网络协议隐藏，突破局域网拦截，上班就可以开心的摸鱼了...
+
+当然 你也可以用来学习Socket通信，多线程编程，也可以用于简单的生产环境，实现正向代理，流量监控，上网行为监控等。
 
 本项目原始基于idea，可导入idea直接运行。
 
+# 如何使用
 
-# 直接运行已经打包好的jar
-
-
+## 直接运行已经打包好的jar
 [已经打包好的jar在这里](./out/artifacts/)
+
+### 1.设置系统代理
 
 要想看到效果，需要把你操作系统代理设置到 你LocalConfig.json文件设置的host和port上
 
@@ -37,6 +39,16 @@
 Win shell:open_proxy.bat,close_proxy.bat
 
 Mac shell: open_proxy.sh,close_proxy.sh
+
+### 2.运行Jar包
+
+分别将配置文件和jar放在同一个目录
+
+在服务器上，运行server: java -jar MyNatServer.jar（如果在一台电脑上既运行客户端又运行服务器端，仅仅相当于charles抓包效果）
+
+在你的电脑上，运行client: java -jar MyNatClient.jar
+
+到此，你可以打开浏览器访问"一些网站"试试看，
 
 
 #源码运行
@@ -81,6 +93,14 @@ port:本地代理端口,可以是任意本地没有使用的端口(设置到系�
 
 
 ###服务器端的配置详解
+        {
+            "host": "127.0.0.1",
+            "port": 1666,
+            "responseHttps": "true",
+            "enc": "true"
+        }
+
+
 host:远程代理服务器IP，因为是本地所以就是127.0.0.1" 永远不变，实际上你配置了也不会有任何影响
 
 port:服务器接受客户端端网络请求端口（服务器端配置文件唯一需要修改的）
@@ -89,11 +109,5 @@ responseHttps:是否需要响应Https,永远是true(只有当做中间件的时�
 
 enc:是否加密，解密,建议永远是true
 
-        {
-            "host": "127.0.0.1",
-            "port": 1666,
-            "responseHttps": "true",
-            "enc": "true"
-        }
 
 ### 欢迎fork star ！！！
