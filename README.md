@@ -6,16 +6,20 @@
 
 # 介绍
 
-纯Java实现的网络代理小工具，是学习socket通信，多线程，绝佳项目
+纯Java实现的网络代理小工具，可以用来学习Socket通信，多线程编程，当然也可以用于简单的生成环境。
 
-可导入idea直接运行。
+本项目原始基于idea，可导入idea直接运行。
 
 
 # 直接运行已经打包好的jar
 
+
+[已经打包好的jar在这里](./out/artifacts/)
+
 要想看到效果，需要把你操作系统代理设置到 你LocalConfig.json文件设置的host和port上
 
-设置代理方法，以win10 为例，
+设置代理方法，以win10 为例（Mac 自己搜索一下，也很简单，Android IOS 设备如果和运行这个代理的服务器端在一个局域网里，只需要把移动设备的网络代理设置到
+这个电脑的IP和配置的端口就行，不需要在移动设备上运行任何程序）
 
 &nbsp;&nbsp;&nbsp;&nbsp;1.右击桌面右下角的wifi符号：选择弹出菜单“打开网络和internet设置“
 
@@ -33,9 +37,6 @@
 Win shell:open_proxy.bat,close_proxy.bat
 
 Mac shell: open_proxy.sh,close_proxy.sh
-
-
-[已经打包好的jar在这里](./out/artifacts/)
 
 
 #源码运行
