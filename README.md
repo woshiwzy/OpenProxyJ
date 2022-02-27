@@ -2,28 +2,28 @@
 
 # 申明
 
-本项目只是作者记录和分享Java网络编程学习心得，请勿用于非法用途，否则后果自负!
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本项目只是作者记录和分享Java网络编程学习心得，请勿用于非法用途，否则后果自负!
 
 # 介绍
 
-纯Java实现的网络代理小工具，是学习socket通信，多线程，绝佳项目
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;纯Java实现的网络代理小工具，是学习socket通信，多线程，绝佳项目
 
 可导入idea直接运行。
 
 
 #直接运行已经打包好的jar
 
-要想看到效果，需要把你操作系统代理设置到 你LocalConfig.json文件设置的host和port上
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;要想看到效果，需要把你操作系统代理设置到 你LocalConfig.json文件设置的host和port上
 
 设置代理方法，以win10 为例，
 
-1.右击桌面右下角的wifi符号：选择弹出菜单“打开网络和internet设置“
+&nbsp;&nbsp;&nbsp;&nbsp;1.右击桌面右下角的wifi符号：选择弹出菜单“打开网络和internet设置“
 
-2.接着在打开的“设置“窗口中，点击”代理“
+&nbsp;&nbsp;&nbsp;&nbsp;2.接着在打开的“设置“窗口中，点击”代理“
 
-3.在右侧的代理设置面板开启"使用代理服务器"开关
+&nbsp;&nbsp;&nbsp;&nbsp;3.在右侧的代理设置面板开启"使用代理服务器"开关
 
-4.并且在地址一栏填写: 127.0.0.1,端口一栏填写，LocalConfig.json中配置的port值
+&nbsp;&nbsp;&nbsp;&nbsp;4.并且在地址一栏填写: 127.0.0.1,端口一栏填写，LocalConfig.json中配置的port值
 
 
 上述步骤可以通过bat脚本完成 ,前提需要配置JRE环境变量，
@@ -45,7 +45,7 @@ Mac shell: open_proxy.sh,close_proxy.sh
 
         com.proxy.local.starter.LocalStarter
 
-以这个类为主类打包可执行jar,LocalConfig.json文件放在和这个jar同一个目录下
+&nbsp;&nbsp;&nbsp;&nbsp;以这个类为主类打包可执行jar,LocalConfig.json文件放在和这个jar同一个目录下
 运行时直接 java -jar MyNatClient.jar 即可.
 
 ###客户端配置文件详解
