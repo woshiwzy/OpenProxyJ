@@ -1,0 +1,6 @@
+{
+	"host": "127.0.0.1",
+	"port": 1666,
+	"responseHttps": "true",
+	"enc": "true"
+}

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="commons-io-2.7">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/commons-io-2.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/fastjson-1.2.73.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/http-20070405.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
