@@ -3,7 +3,9 @@
 
 本项目只是作者记录和分享Java网络编程学习心得，请勿用于非法用途，否则后果自负!
 
-原理介绍博客：https://blog.csdn.net/wang382758656/article/details/123098032
+原理介绍博客：
+https://blog.csdn.net/wang382758656/article/details/123098032
+https://juejin.cn/post/7069218800226271239
 
 # 介绍
 
